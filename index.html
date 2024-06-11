@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GhanDev | E-Commerce</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <main class="main-container">
+      <header class="header">
+        <div class="header__navigation">
+          <img
+            class="header__menu"
+            src="/assets/images/icon-menu.svg"
+            alt="menu icon"
+          />
+          <h4 class="header__text-logo">Cazador de Modas</h4>
+          <img
+            class="header__logo"
+            src="/assets/images/logo-cdm.png"
+            alt="Logo CDM"
+          />
+
+          <!--start navbar-->
+          <nav class="navbar">
+            <ul class="navbar__items">
+              <li><a class="navbar__link" href="#">Colección</a></li>
+              <li><a class="navbar__link" href="#">Caballeros</a></li>
+              <li><a class="navbar__link" href="#">Damas</a></li>
+              <li><a class="navbar__link" href="#">Niños</a></li>
+              <li><a class="navbar__link" href="#">Accesorios</a></li>
+              <li><a class="navbar__link" href="#">Quienes Somos</a></li>
+              <li><a class="navbar__link" href="#">Contactanos</a></li>
+            </ul>
+          </nav>
+          <!--Final navbar-->
+        </div>
+
+        <!--start modal navbar-->
+        <div class="modal-navbar__background">
+          <nav class="modal-navbar">
+            <img
+              class="modal-navbar__close-icon"
+              src="/assets/images/icon-close.svg"
+              alt="X"
+            />
+            <ul class="modal-navbar__items">
+              <li><a class="modal-navbar__link" href="#">Colección</a></li>
+              <li><a class="modal-navbar__link" href="#">Caballeros</a></li>
+              <li><a class="modal-navbar__link" href="#">Damas</a></li>
+              <li><a class="modal-navbar__link" href="#">Niños</a></li>
+              <li><a class="modal-navbar__link" href="#">Accesorios</a></li>
+              <li><a class="modal-navbar__link" href="#">Quienes Somos</a></li>
+              <li><a class="modal-navbar__link" href="#">Contactanos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--Final modal navbar-->
+
+        <div class="header__cart-avatar">
+          <div class="header__cart">
+            <div class="header__cart--notification">0</div>
+            <img
+              class="header__cart-icon"
+              src="/assets/images/icon-cart.svg"
+              alt="cart icon"
+            />
+          </div>
+          <img
+            class="header__avatar"
+            src="https://avatars.githubusercontent.com/u/133609600?v=4"
+            alt="profile avatar"
+          />
+        </div>
+      </header>
+      <section class="content">
+        <article class="gallery">
+          <div class="gallery__image-container"></div>
+          <div>
+            <img
+              class="gallery__previous-icon"
+              src="/assets/images/icon-left_arrow.svg"
+              alt="previous-icon"
+            />
+            <img
+              class="gallery__next-icon"
+              src="/assets/images/icon-right_arrow.svg"
+              alt="next-icon"
+            />
+          </div>
+          <div class="gallery__thumbnails">
+            <img
+              id="1"
+              class="gallery__thumbnail"
+              src="/assets/images/thumbnail-image-product-1.png"
+              alt="Camisa Manga Larga"
+            />
+            <img
+              id="2"
+              class="gallery__thumbnail"
+              src="/assets/images/thumbnail-image-product-2.png"
+              alt="Camisa Manga Larga"
+            />
+            <img
+              id="3"
+              class="gallery__thumbnail"
+              src="/assets/images/thumbnail-image-product-3.png"
+              alt="Camisa Manga Larga"
+            />
+            <img
+              id="4"
+              class="gallery__thumbnail"
+              src="/assets/images/thumbnail-image-product-4.png"
+              alt="Camisa Manga Larga"
+            />
+          </div>
+        </article>
+
+        <article class="details">
+          <h2 class="details__company">Cazador de Modas</h2>
+          <h2 class="details__title">Camisa Formal Edición Limitada...</h2>
+          <p class="details__description">
+            Si buscas un estilo elegante y semi-formal con este atuendo llamaras
+            la atención con sus lineas delgadas de colores suaves, ademas del
+            confort que ofrece su tela de 70% algodón y 30% polyester.
+          </p>
+          <div class="details__prices">
+            <p class="details__now">
+              $25.00 <span class="details__discount">50%</span>
+            </p>
+            <p class="details__before">$50.00</p>
+          </div>
+          <div class="details__product-quantity">
+            <div class="input">
+              <img
+                class="input__minus"
+                src="/assets/images/icon-minus.svg"
+                alt="minus icon"
+              />
+
+              <input
+                name="quantity"
+                class="input__number"
+                type="number"
+                value="0"
+              />
+
+              <img
+                class="input__plus"
+                src="/assets/images/icon-plus.svg"
+                alt="plus-icon"
+              />
+            </div>
+
+            <button class="details__button">
+              <img
+                class="details__cart-icon"
+                src="/assets/images/icon-cart.svg"
+                alt="cart icon"
+              />
+              Agregar al Carrito
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <!--Start Modal Cart -->
+      <div class="cart-modal">
+        <p class="cart-modal__title">Cesta</p>
+        <div class="cart-modal__checkout-container">
+          <div class="cart-modal__details-container">
+            <img
+              class="cart-modal__image"
+              src="assets/images/thumbnail-image-product-1.png"
+              alt="Camisa Hombre"
+            />
+            <div>
+              <p class="cart-modal__product">
+                Camisa Formal Edición Limitada...
+              </p>
+              <p class="cart-modal__price">
+                $25 x <span class="cart-modal__quantity">0 </span
+                ><span class="cart-modal__span">$0.00</span>
+              </p>
+            </div>
+            <img
+              class="cart-modal__delete"
+              src="/assets/images/icon-delete.svg"
+              alt="icon delete"
+            />
+          </div>
+          <button class="cart-modal__checkout">Confirmar Compra</button>
+        </div>
+      </div>
+      <!--End Modal Cart -->
+      <footer class="attribution">
+        Realizado Por
+        <a href="https://ghandev.com/" target="_blank">GhandiDev.</a>
+        Copyright 2024.
+      </footer>
+    </main>
+
+    <!--Start gallery-modal-->
+    <div class="modal-gallery__background">
+      <article class="modal-gallery">
+        <div class="modal-gallery__close-container">
+          <img
+            class="modal-gallery__close"
+            src="/assets/images/icon-close.svg"
+            alt="icon close"
+          />
+        </div>
+        <div class="modal-gallery__image-container">
+          <img
+            class="modal-gallery__previous-icon"
+            src="/assets/images/icon-left_arrow.svg"
+            alt="icon Left"
+          />
+          <img
+            class="modal-gallery__next-icon"
+            src="/assets/images/icon-right_arrow.svg"
+            alt="icon right"
+          />
+        </div>
+        <div class="modal-gallery__thumbnails">
+          <img
+            id="m1"
+            class="modal-gallery__thumbnail"
+            src="/assets/images/thumbnail-image-product-1.png"
+            alt="Camisa Manga Larga"
+          />
+          <img
+            id="m2"
+            class="modal-gallery__thumbnail"
+            src="/assets/images/thumbnail-image-product-2.png"
+            alt="Camisa Manga Larga"
+          />
+          <img
+            id="m3"
+            class="modal-gallery__thumbnail"
+            src="/assets/images/thumbnail-image-product-3.png"
+            alt="Camisa Manga Larga"
+          />
+          <img
+            id="m4"
+            class="modal-gallery__thumbnail"
+            src="/assets/images/thumbnail-image-product-4.png"
+            alt="Camisa Manga Larga"
+          />
+        </div>
+      </article>
+    </div>
+    <!--End gallery-modal-->
+    <script src="/main.js"></script>
+  </body>
+</html>
